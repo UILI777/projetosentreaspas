@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Product preview card component</title>
-  <link rel="stylesheet" href="estilo/style3.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProductCardPreview</title>
+  <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-  <div class="banner">
-      <div class="banner-img">
-        <img src="images/image-product-desktop.jpg" alt="produto">
+  <div class="container">
+    <div class="card">
+      <div class="image">
+        <img src="images/image-product-desktop.jpg" alt=".">
       </div>
-
-      <div class="banner-desc">
-        <h2>PERFUME</h2>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>A floral, solar and voluptuous interpretation compased by olver Polge, Perfumer-creator for the house of CHANEL.</p>
-
+      <div class="details">
+        <h6 class="cat">perfume</h6>
+        <h1 class="tittle">Gabriele Essence Eau De Parfum</h1>
+        <p class="desc">A floral, solar and voluptuous interpetation composed by Oliver Polge, Perfume-Creator for the House of CHANEL.</p>
         <div class="price">
-          <div class="price-promo">$149.99</div>
-          <div class="price-normal">$169.99</div>
+          <div class="current-price">$149.99</div>
+          <div class="old-price">$169.99</div>
         </div>
-
-        <button class="button">
-          <img src="images/icon-cart.svg" alt="carrinho"> Adicionar ao carrinho
-        </button>
-
+        <button class="cart"><img src="images/icon-cart.svg" alt="cart">Add to cart</button>
       </div>
-  </div> 
+    </div>
+  </div>
 </body>
 </html>
+
+
+
