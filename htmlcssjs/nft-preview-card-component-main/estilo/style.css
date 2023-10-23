@@ -2,63 +2,105 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;700&family=Fraunces:opsz,wght@9..144,100;9..144,300;9..144,400;9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Passion+One:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Sriracha&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Outfit";
 }
 
-body{
+body {
     background-color: hsl(217, 54%, 11%);
-    min-width: 100vh;
-}
-
-.container{
-    margin: auto auto;
+    font-family: "Outfit";
+    display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; 
+}
+
+.container {
+    min-width: 300px;
     max-width: 400px;
     border-radius: 1rem;
     background-color: hsl(216, 50%, 16%);
     padding: 2rem;
+    width: 100%;
+    margin: 2rem;
 }
 
-.image{
-}
-
-.image img{
+.image img {
     border-radius: 1rem;
     width: 100%;
+    cursor: pointer;
+    border: 1px solid hsl(217, 54%, 11%);
 }
 
-.desc h2{
+.desc h2 {
     margin: 2rem 0;
     color: hsl(0, 0%, 100%);
     font-weight: 600;
+    cursor: pointer;
 }
 
-.desc p{
+.desc p {
     font-size: 18px;
     color: hsl(215, 51%, 70%);
     font-weight: 300;
 }
 
-.promo{
+.promo {
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    padding-bottom: 10px;
 }
 
-.price{
+.price {
     color: hsl(178, 100%, 50%);
     font-weight: 400;
-    
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
-.price img{
+.price img {
+    padding-right: 5px;
 }
 
-.time-left{
+.time-left {
     color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.time-left img {
+    padding-right: 5px;
+}
+
+.creator {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+.creator span {
+    color: hsl(0, 0%, 100%);
+    padding-left: 9px;
+    cursor: pointer;
+}
+
+.creator img {
+    width: 40px;
+    margin-right: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        min-width: 300px;
+        max-width: 400px
+    }
 }
